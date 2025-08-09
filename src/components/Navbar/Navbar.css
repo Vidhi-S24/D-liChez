@@ -23,13 +23,15 @@
   font-size: 18px;
 }
 
-.navbar li {
+.navbar a {
   cursor: pointer;
+  color: black;
 }
 
 .navbar .active {
   padding-bottom: 2px;
   border-bottom: 2px solid black;
+  color: black;
 }
 
 .navbar-right {

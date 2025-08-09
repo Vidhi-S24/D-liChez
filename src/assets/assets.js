@@ -12,6 +12,11 @@ import combos from './combos.jpg'
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
+import facebook from './facebook.png'
+import twitter from './twitter.png'
+import instagram from './instagram.png'
+import app_store_icon from './app_store_icon.png'
+import google_play_icon from './google_play_icon.png'
 
 import Starter_1 from './Starter_1.jpg'
 import Starter_2 from './Starter_2.jpg'
@@ -92,12 +97,17 @@ export const assets = {
     header_image,
     add_icon_white,
     add_icon_green,
-    remove_icon_red
+    remove_icon_red,
+    facebook,
+    twitter,
+    instagram,
+    app_store_icon,
+    google_play_icon
 }
 
 export const menu_list = [
     {
-        menu_name: "Sarters",
+        menu_name: "Starters",
         menu_image: Starter
     },
     {
@@ -133,7 +143,7 @@ export const food_list = [
         image: Starter_1,
         price: 9,
         description: "French onion soup made with vegetable broth and topped with melted cheese",
-        category: "Starter"
+        category: "Starters"
     },
     {
         _id: "53",
@@ -149,7 +159,7 @@ export const food_list = [
         image: Starter_2,
         price: 12,
         description: "Warm goat cheese on toasted bread served over a green salad",
-        category: "Starter"
+        category: "Starters"
     },
     {
         _id: "3",
@@ -157,7 +167,7 @@ export const food_list = [
         image: Starter_3,
         price: 11,
         description: "Stewed Provencal vegetables (zucchini, eggplant, peppers, tomatoes) served warm or cold",
-        category: "Starter"
+        category: "Starters"
     },
     {
         _id: "5",
@@ -165,7 +175,7 @@ export const food_list = [
         image: Starter_5,
         price: 9,
         description: " Beetroot salad, often with walnuts and goat cheese",
-        category: "Starter"
+        category: "Starters"
     },
     {
         _id: "38",
@@ -173,7 +183,7 @@ export const food_list = [
         image: dessert10,
         price: 20,
         description: "A tall, elegant tower of cream-filled choux pastry puffs, held together with caramel",
-        category: "Dessert"
+        category: "Desserts"
     },
     {
         _id: "6",
@@ -181,7 +191,7 @@ export const food_list = [
         image: Starter_6,
         price: 9,
         description: "Creamy pumpkin soup",
-        category: "Starter"
+        category: "Starters"
     },
     {
         _id: "7",
@@ -189,7 +199,7 @@ export const food_list = [
         image: Starter_7,
         price: 10,
         description: "Creamy baked sliced potatoes with cheese and garlic",
-        category: "Starter"
+        category: "Starters"
     },
     {
         _id: "9",
@@ -197,7 +207,7 @@ export const food_list = [
         image: Starter_9,
         price: 11,
         description: "Mushrooms sautéed with garlic, herbs, and olive oil",
-        category: "Starter"
+        category: "Starters"
     },
     {
         _id: "10",
@@ -205,7 +215,7 @@ export const food_list = [
         image: Starter_10,
         price: 8,
         description: "Deviled eggs with a creamy mustard filling",
-        category: "Starter"
+        category: "Starters"
     },
     {
         _id: "21",
@@ -213,7 +223,7 @@ export const food_list = [
         image: Sides1,
         price: 14,
         description: "Mashed potatoes blended with melted Tomme cheese, butter, and garlic",
-        category: "Cheese_Sides"
+        category: "Cheese & Sides"
     },
 
     {
@@ -222,7 +232,7 @@ export const food_list = [
         image: Starter_4,
         price: 10,
         description: "Vegetable tart, often with tomatoes, zucchini, or onions and cheese",
-        category: "Starter"
+        category: "Starters"
     },
     {
         _id: "12",
@@ -230,7 +240,7 @@ export const food_list = [
         image: mainCourse2,
         price: 16,
         description: "Hearty slow-cooked white bean stew with vegetables, no meat",
-        category: "mainCourse"
+        category: "Main Course"
     },
     {
         _id: "13",
@@ -238,7 +248,7 @@ export const food_list = [
         image: mainCourse3,
         price: 15,
         description: "Savoyard buckwheat pasta bake with cheese, onions, and cream",
-        category: "mainCourse"
+        category: "Main Course"
     },
     {
         _id: "15",
@@ -246,7 +256,7 @@ export const food_list = [
         image: mainCourse5,
         price: 13,
         description: "Baked zucchini with béchamel sauce and cheese",
-        category: "mainCourse"
+        category: "Main Course"
     },
     {
         _id: "17",
@@ -254,7 +264,7 @@ export const food_list = [
         image: mainCourse7,
         price: 17,
         description: "Pasta with wild mushrooms and cream sauce",
-        category: "mainCourse"
+        category: "Main Course"
     },
     {
         _id: "18",
@@ -262,7 +272,7 @@ export const food_list = [
         image: mainCourse8,
         price: 15,
         description: "Pasta with wild mushrooms and cream sauce",
-        category: "mainCourse"
+        category: "Main Course"
     },
     {
         _id: "27",
@@ -270,7 +280,7 @@ export const food_list = [
         image: Sides7,
         price: 7,
         description: "Glazed carrots simmered with butter, sugar, and Vichy mineral water",
-        category: "Cheese_Sides"
+        category: "Cheese & Sides"
     },
         {
         _id: "29",
@@ -278,7 +288,7 @@ export const food_list = [
         image: dessert1,
         price: 7,
         description: "A creamy vanilla custard topped with a caramelized sugar crust",
-        category: "Dessert"
+        category: "Desserts"
     },
     {
         _id: "20",
@@ -286,7 +296,7 @@ export const food_list = [
         image: mainCourse10,
         price: 14,
         description: "Root vegetable gratin (parsnip, carrot, potato) with cheese or béchamel",
-        category: "mainCourse"
+        category: "Main Course"
     },
     {
         _id: "22",
@@ -294,7 +304,7 @@ export const food_list = [
         image: Sides2,
         price: 13,
         description: "Roasted goat cheese with honey and herbs, served with salad or bread",
-        category: "Cheese_Sides"
+        category: "Cheese & Sides"
     },
     {
         _id: "36",
@@ -302,7 +312,7 @@ export const food_list = [
         image: dessert8,
         price: 6,
         description: "Baked flan-like dessert with cherries (or seasonal fruit) in a custard base",
-        category: "Dessert"
+        category: "Desserts"
     },
     {
         _id: "24",
@@ -310,7 +320,7 @@ export const food_list = [
         image: Sides4,
         price: 9,
         description: "Root vegetable gratin (parsnip, carrot, potato) with cheese or béchamel",
-        category: "Cheese_Sides"
+        category: "Cheese & Sides"
     },
     {
         _id: "31",
@@ -318,7 +328,7 @@ export const food_list = [
         image: dessert3,
         price: 6,
         description: "An upside-down caramelized apple tart with a buttery crust",
-        category: "Dessert"
+        category: "Desserts"
     },
     {
         _id: "25",
@@ -326,7 +336,7 @@ export const food_list = [
         image: Sides5,
         price: 6,
         description: "Sweet and tangy onion jam, often served alongside cheese or bread",
-        category: "Cheese_Sides"
+        category: "Cheese & Sides"
     },
     {
         _id: "62",
@@ -334,7 +344,7 @@ export const food_list = [
         image: combo5,
         price: 11,
         description: "Croque aux Légumes (grilled sandwich with cheese & veggies) + Limonade Artisanale + Fries",
-        category: "Combo"
+        category: "Combos"
     },
     {
         _id: "40",
@@ -342,7 +352,7 @@ export const food_list = [
         image: bakery2,
         price: 3,
         description: "A croissant-like pastry filled with dark chocolate sticks",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
     {
         _id: "26",
@@ -350,7 +360,7 @@ export const food_list = [
         image: Sides6,
         price: 9,
         description: "Creamy cornmeal with cheese and butter, sometimes served as a base for mains",
-        category: "Cheese_Sides"
+        category: "Cheese & Sides"
     },
     {
         _id: "14",
@@ -358,14 +368,14 @@ export const food_list = [
         image: mainCourse4,
         price: 14,
         description: "Basque pepper-tomato stew with onions and garlic; optionally vegan",
-        category: "mainCourse"
+        category: "Main Course"
     }, {
         _id: "23",
         name: "Céleri rémoulade",
         image: Sides3,
         price: 7,
         description: "	Baked vegetable custard (often carrot, spinach, or zucchini)",
-        category: "Cheese_Sides"
+        category: "Cheese & Sides"
     },
     {
         _id: "19",
@@ -373,7 +383,7 @@ export const food_list = [
         image: mainCourse9,
         price: 14,
         description: "Dijon-style lentils in a mustard cream sauce with herbs",
-        category: "mainCourse"
+        category: "Main Course"
     },
     {
         _id: "33",
@@ -381,7 +391,7 @@ export const food_list = [
         image: dessert5,
         price: 6,
         description: "Layers of puff pastry with vanilla cream filling and icing on top",
-        category: "Dessert"
+        category: "Desserts"
     },
     {
         _id: "48",
@@ -389,7 +399,7 @@ export const food_list = [
         image: bakery10,
         price: 6,
         description: "(French Toast) Sweet egg-soaked brioche, pan-fried and served with syrup or fruit",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
     {
         _id: "39",
@@ -397,7 +407,7 @@ export const food_list = [
         image: bakery1,
         price: 3,
         description: "Buttery, flaky crescent-shaped pastry made with layered yeast dough",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
     {
         _id: "34",
@@ -405,7 +415,7 @@ export const food_list = [
         image: dessert6,
         price: 7,
         description: "Cream-filled choux pastry puffs topped with warm chocolate sauce ",
-        category: "Dessert"
+        category: "Desserts"
     },
     {
         _id: "46",
@@ -413,7 +423,7 @@ export const food_list = [
         image: bakery8,
         price: 4,
         description: "Country-style round sourdough bread, rustic and hearty",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
     {
         _id: "50",
@@ -429,7 +439,7 @@ export const food_list = [
         image: dessert7,
         price: 6,
         description: "Small shell-shaped sponge cakes with a lemon or vanilla flavor",
-        category: "Dessert"
+        category: "Desserts"
     },
         {
         _id: "30",
@@ -437,7 +447,7 @@ export const food_list = [
         image: dessert2,
         price: 8,
         description: "Colorful almond meringue cookies with ganache or jam filling",
-        category: "Dessert"
+        category: "Desserts"
     },
     {
         _id: "8",
@@ -445,7 +455,7 @@ export const food_list = [
         image: Starter_8,
         price: 8,
         description: "Fresh vegetable sticks served with a herbed yogurt dip",
-        category: "Starter"
+        category: "Starters"
     },
 
         {
@@ -454,7 +464,7 @@ export const food_list = [
         image: Sides8,
         price: 12,
         description: "Melted Raclette cheese is scraped over boiled potatoes, pickles, and optionally vegetables or charcuterie",
-        category: "Cheese_Sides"
+        category: "Cheese & Sides"
     },
     {
         _id: "42",
@@ -462,7 +472,7 @@ export const food_list = [
         image: bakery4,
         price: 4,
         description: "Soft, sweet, buttery bread often shaped as a loaf or bun",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
     {
         _id: "43",
@@ -470,7 +480,7 @@ export const food_list = [
         image: bakery5,
         price: 3,
         description: "Spiral pastry with custard and raisins, similar to a Danish",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
     
     {
@@ -479,7 +489,7 @@ export const food_list = [
         image: bakery6,
         price: 3,
         description: "Puff pastry filled with smooth apple compote (apple turnover)",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
     {
         _id: "45",
@@ -487,7 +497,7 @@ export const food_list = [
         image: bakery7,
         price: 3,
         description: "Leaf-shaped Provençal bread, often with olives, herbs, or cheese",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
         {
         _id: "47",
@@ -495,7 +505,7 @@ export const food_list = [
         image: bakery9,
         price: 2,
         description: "A thinner, longer version of the baguette, extra crusty",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
     {
         _id: "49",
@@ -519,7 +529,7 @@ export const food_list = [
         image: bakery3,
         price: 2,
         description: "Classic long, crusty French bread with a chewy interior",
-        category: "Bakery_breakfast"
+        category: "Bakery & Breakfast"
     },
     {
         _id: "52",
@@ -543,7 +553,7 @@ export const food_list = [
         image: mainCourse6,
         price: 16,
         description: "Stuffed cabbage leaves with rice, herbs, and vegetables (no meat)",
-        category: "mainCourse"
+        category: "Main Course"
     },
     {
         _id: "55",
@@ -575,7 +585,7 @@ export const food_list = [
         image: combo1,
         price: 7,
         description: "Croissant + Café au Lait + Jus d’Orange ",
-        category: "Combo"
+        category: "Combos"
     },
     {
         _id: "32",
@@ -583,7 +593,7 @@ export const food_list = [
         image: dessert4,
         price: 6,
         description: "A choux pastry filled with chocolate cream and glazed with chocolate icing",
-        category: "Dessert"
+        category: "Desserts"
     },
     {
         _id: "59",
@@ -591,7 +601,7 @@ export const food_list = [
         image: combo2,
         price: 6,
         description: "Sweet Crêpe (Nutella or sugar) + Chocolat Chaud",
-        category: "Combo"
+        category: "Combos"
     },
     {
         _id: "60",
@@ -599,7 +609,7 @@ export const food_list = [
         image: combo3,
         price: 9,
         description: "Ratatouille + Baguette Tradition + Sparkling Water",
-        category: "Combo"
+        category: "Combos"
     },
     {
         _id: "61",
@@ -607,7 +617,7 @@ export const food_list = [
         image: combo4,
         price: 8,
         description: "Cheese Platter (Brie, Camembert, Comté) + Grapes + Baguette",
-        category: "Combo"
+        category: "Combos"
 
     }, 
     {
@@ -616,7 +626,7 @@ export const food_list = [
         image: mainCourse1,
         price: 16,
         description: "Oven-baked layered vegetables (zucchini, tomato, eggplant) with herbs",
-        category: "mainCourse"
+        category: "Main Course"
     },
     {
         _id: "63",
@@ -624,7 +634,7 @@ export const food_list = [
         image: combo6,
         price: 11,
         description: "Quiche aux Légumes + Salade Verte + Thé au Lait",
-        category: "Combo"
+        category: "Combos"
     },
     {
         _id: "37",
@@ -632,7 +642,7 @@ export const food_list = [
         image: dessert9,
         price: 8,
         description: "Rich layered almond sponge cake with coffee buttercream and chocolate ganache",
-        category: "Dessert"
+        category: "Desserts"
     },
     {
         _id: "64",
@@ -640,6 +650,6 @@ export const food_list = [
         image: combo7,
         price: 11,
         description: "French Onion Soup + Baguette Slices + Red Wine",
-        category: "Combo"
+        category: "Combos"
     }
 ]
