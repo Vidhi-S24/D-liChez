@@ -17,6 +17,7 @@ import twitter from './twitter.png'
 import instagram from './instagram.png'
 import app_store_icon from './app_store_icon.png'
 import google_play_icon from './google_play_icon.png'
+import cross_icon from './cross_icon.png'
 
 import Starter_1 from './Starter_1.jpg'
 import Starter_2 from './Starter_2.jpg'
@@ -102,7 +103,8 @@ export const assets = {
     twitter,
     instagram,
     app_store_icon,
-    google_play_icon
+    google_play_icon,
+    cross_icon
 }
 
 export const menu_list = [

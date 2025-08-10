@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './Navbar.css';
 import { assets } from '../../assets/assets';
 import { Link } from 'react-router-dom';
+import { StoreContext } from '../../context/StoreContext';
 
-const Navbar = ({setShowLogin}) => {
+const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const { getTotalCartAmount } = useContext(StoreContext);
 
   const handleMenuClick = (selected) => {
     setMenu(selected);
@@ -24,7 +26,7 @@ const Navbar = ({setShowLogin}) => {
 
   return (
     <div className='navbar'>
-      <img src={assets.logo} alt="logo" className="logo" />
+      <Link to='/'><img src={assets.logo} alt="logo" className="logo" /></Link>
 
       {!isTablet && (
         <ul className='navbar-menu'>
@@ -40,10 +42,10 @@ const Navbar = ({setShowLogin}) => {
           <>
             <img src={assets.search_icon} alt="search" />
             <div className="navbar-search-icon">
-              <img src={assets.cart} alt="cart" />
-              <div className="dot"></div>
+              <Link to='/cart'><img src={assets.cart} alt="cart" /></Link>
+              <div className={getTotalCartAmount() ===0? "" : "dot"}></div>
             </div>
-            <button onClick={()=>setShowLogin(true)}>Sign In</button>
+            <button onClick={() => setShowLogin(true)}>Sign In</button>
           </>
         )}
 
@@ -62,20 +64,20 @@ const Navbar = ({setShowLogin}) => {
 
           {isMobile && (
             <div className="mobile-top-items">
-              <img src={assets.search_icon} alt="search" height="20px" width="20px"/>
+              <img src={assets.search_icon} alt="search" height="20px" width="20px" />
               <div className="navbar-search-icon">
-                <img src={assets.cart} alt="cart" />
-                <div className="dot"></div>
+                <Link to='/cart'><img src={assets.cart} alt="cart" /></Link>
+                <div className={getTotalCartAmount() ===0? "" : "dot"}></div>
               </div>
-              <button onClick={()=>setShowLogin(true)}>Sign In</button>
+              <button onClick={() => setShowLogin(true)}>Sign In</button>
             </div>
           )}
 
           <ul>
-            <li onClick={() => handleMenuClick("home")} className={menu === "home" ? "active" : ""}>Home</li>
-            <li onClick={() => handleMenuClick("menu")} className={menu === "menu" ? "active" : ""}>Menu</li>
-            <li onClick={() => handleMenuClick("mobile-app")} className={menu === "mobile-app" ? "active" : ""}>Mobile-App</li>
-            <li onClick={() => handleMenuClick("contact-us")} className={menu === "contact-us" ? "active" : ""}>Contact Us</li>
+            <Link to='/' onClick={() => handleMenuClick("home")} className={menu === "home" ? "active" : ""}>Home</Link>
+            <a href='#explore-menu' onClick={() => handleMenuClick("menu")} className={menu === "menu" ? "active" : ""}>Menu</a>
+            <a href='#app-download' onClick={() => handleMenuClick("mobile-app")} className={menu === "mobile-app" ? "active" : ""}>Mobile-App</a>
+            <a href='#footer' onClick={() => handleMenuClick("contact-us")} className={menu === "contact-us" ? "active" : ""}>Contact Us</a>
           </ul>
         </div>
       </div>
