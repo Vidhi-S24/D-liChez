@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px 8vw;
-  padding: 40px 20px 20px; /* 👈 reduced top padding */
+  padding: 40px 20px 20px; 
   margin-top: 40px;
   box-sizing: border-box;
   text-align: center;
@@ -20,7 +20,6 @@
   text-align: left;
 }
 
-/* Common styles for columns */
 .footer-content-left,
 .footer-content-right,
 .footer-content-center {

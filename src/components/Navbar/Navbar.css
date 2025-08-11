@@ -68,7 +68,6 @@
   right: -5px;
 }
 
-/* Hamburger button */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -83,7 +82,6 @@
   border-radius: 2px;
 }
 
-/* Slide-in overlay */
 .mobile-menu-overlay {
   position: fixed;
   top: 0;
@@ -144,7 +142,6 @@
   margin-bottom: 20px;
 }
 
-/* Slide animation */
 @keyframes slideInRight {
   from {
     transform: translateX(100%);

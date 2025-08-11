@@ -19,7 +19,7 @@
   transform: translateY(-3px);
 }
 
-/* 📦 Image Container */
+
 .food-item-img-container {
   width: 100%;
   max-width: 250px;
@@ -31,7 +31,7 @@
   margin: 0 auto;
 }
 
-/* 🖼️ Responsive Image */
+
 .food-item-image {
   width: 100%;
   max-width: 250px;
@@ -41,7 +41,7 @@
   object-fit: cover;
 }
 
-/* ℹ️ Text Content */
+
 .food-item-info {
   width: 100%;
   padding: 10px;
@@ -74,7 +74,6 @@
   margin-top: 5px;
 }
 
-/* ➕➖ Add / Counter Buttons */
 .add,
 .food-item-counter {
   position: absolute;
@@ -110,7 +109,6 @@
   margin: 0;
 }
 
-/* ✅ Responsive Fixes for Mobile */
 @media (max-width: 600px) {
   .food-item {
     padding: 8px;
