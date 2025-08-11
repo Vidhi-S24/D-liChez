@@ -5,7 +5,6 @@ import { assets } from '../../assets/assets';
 const LoginPopup = ({ setShowLogin }) => {
   const [currState, setCurrState] = useState("Sign Up");
 
-  // Disable scroll on mount, re-enable on unmount
   useEffect(() => {
     document.body.style.overflow = 'hidden';
     return () => {
