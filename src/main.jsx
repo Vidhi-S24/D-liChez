@@ -7,8 +7,8 @@ import StoreContextProvider from './context/StoreContext.jsx'
 import { StoreContext } from './context/contextProvider.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <BrowserRouter basename="/">
-  {/* <BrowserRouter basename="/D-liChez"> for localhost*/}
+  // <BrowserRouter basename="/">
+  <BrowserRouter basename="/D-liChez">
     <StoreContextProvider>
       <App />
     </StoreContextProvider>

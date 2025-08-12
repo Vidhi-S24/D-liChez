@@ -8,12 +8,33 @@ const Footer = () => {
             <div className='footer-content'>
                 <div className='footer-content-left'>
                     <h1>DéliChez</h1>
-                    
+
                     <p>At DéliChez, we’re passionate about delivering the rich, timeless flavors of French cuisine right to your doorstep. From classic starters to indulgent mains and delicate desserts, each dish is crafted with authentic ingredients and culinary care. DéliChez brings a true taste of France to your table — fresh, flavorful, and unforgettable.</p>
                     <div className="footer-social-icons">
-                        <img src={assets.facebook} alt='facebook' />
-                        <img src={assets.instagram} alt='instagram' />
-                        <img src={assets.twitter} alt='twitter' />
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={assets.facebook} alt='facebook' />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={assets.instagram} alt='instagram' />
+                        </a>
+                        <a
+                            href="https://x.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img src={assets.twitter} alt='twitter' />
+                        </a>
+
+
+
                     </div>
                 </div>
                 <div className='footer-content-center'>
